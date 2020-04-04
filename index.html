@@ -40,8 +40,13 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-3 align-self-center">
+                    <a class="btn btn-block  btn-warning text-dark text-center" href="#form">
+                        Reserve Table
+                    </a>
                 </div>
             </div>
         </div>
@@ -110,7 +115,7 @@
             </div>
         </div>
         
-        <div class="row row-content align-items-center">
+        <div class="row row-content align-items-center" id="form">
             <div class="col-12 col-sm-8 offset-sm-2">
                 <div class="card">
                     <h3 class="card-header bg-warning text-white">
@@ -118,40 +123,62 @@
                     </h3>
                     <div class="card-body">
                         <form>
-                            <div class="row align-items-center">
-                                <div class="col-md-2">
-                                    <p>Number of guests</p>
+                            <div class="row">
+                                <div class="col-12 col-lg-2">
+                                    Number of Guests
                                 </div>
-                                <div class="form-check form-check-inline col-md-1">
-                                    <input type="radio" class="form-check-input light" id="first" 
-                                        name="guests" value="option1"/>
-                                    <label class="form-check-label" for="first">1</label>
+                                <div class="col-12 col-lg-10">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input light" id="first" 
+                                            name="guests" value="option1"/>
+                                        <label class="form-check-label" for="first">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="second" 
+                                            name="guests" value="option2"/>
+                                        <label class="form-check-label" for="second">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">   
+                                        <input type="radio" class="form-check-input" id="third" 
+                                            name="guests" value="option3"/>
+                                        <label class="form-check-label" for="third">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="fourth" 
+                                            name="guests" value="option4"/>
+                                        <label class="form-check-label" for="fourth">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="fifth" 
+                                            name="guests" value="option5"/>
+                                        <label class="form-check-label" for="fifth">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="sixth" 
+                                            name="guests" value="option6"/>
+                                        <label class="form-check-label" for="sixth">6</label>
+                                    </div>  
                                 </div>
-                                <div class="form-check form-check-inline col-md-1">
-                                    <input type="radio" class="form-check-input" id="second" 
-                                        name="guests" value="option2"/>
-                                    <label class="form-check-label" for="second">2</label>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-12 col-lg-2">
+                                    Date and Time
                                 </div>
-                                <div class="form-check form-check-inline col-md-1">   
-                                    <input type="radio" class="form-check-input" id="third" 
-                                        name="guests" value="option3"/>
-                                    <label class="form-check-label" for="third">3</label>
+                                <div class="form-group col-lg-3 col-12">
+                                    <input class="form-control" name="Date"  placeholder="Date"
+                                        id="date">
                                 </div>
-                                <div class="form-check form-check-inline col-md-1">
-                                    <input type="radio" class="form-check-input" id="fourth" 
-                                        name="guests" value="option4"/>
-                                    <label class="form-check-label" for="fourth">4</label>
+                                <div class="form-group col-lg-3 col-12">
+                                    <input class="form-control" name="Time"  placeholder="Time"
+                                        id="time" >
                                 </div>
-                                <div class="form-check form-check-inline col-md-1">
-                                    <input type="radio" class="form-check-input" id="fifth" 
-                                        name="guests" value="option5"/>
-                                    <label class="form-check-label" for="fifth">5</label>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-12 col-lg-2 offset-md-2">
+                                    <button class="btn btn-primary text-white">
+                                        Reserve
+                                    </button>
                                 </div>
-                                <div class="form-check form-check-inline col-md-1">
-                                    <input type="radio" class="form-check-input" id="sixth" 
-                                        name="guests" value="option6"/>
-                                    <label class="form-check-label" for="sixth">6</label>
-                                </div>  
                             </div>
                         </form>
                     </div>
